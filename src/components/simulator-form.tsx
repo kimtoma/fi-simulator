@@ -47,9 +47,9 @@ export function SimulatorForm() {
   const [retirementPayLumpSum, setRetirementPayLumpSum] = useState(30000000);
   const [childIndepAge, setChildIndepAge] = useState(60);
   const [childSpendingReduction, setChildSpendingReduction] = useState(12000000);
-  const [recessionCycle, setRecessionCycle] = useState(8);
-  const [recessionDropRate, setRecessionDropRate] = useState(35);
-  const [doomsdayAge, setDoomsdayAge] = useState(50);
+  const [recessionCycle, setRecessionCycle] = useState(10);
+  const [recessionDropRate, setRecessionDropRate] = useState(20);
+  const [doomsdayAge, setDoomsdayAge] = useState(0);
   const [doomsdayDropRate, setDoomsdayDropRate] = useState(50);
   const [doomsdaySpendingReduction, setDoomsdaySpendingReduction] = useState(20);
 
