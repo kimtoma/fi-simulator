@@ -44,7 +44,7 @@ export function SimulatorForm() {
   const [liquidationCost, setLiquidationCost] = useState(15);
   const [pensionStartAge, setPensionStartAge] = useState(65);
   const [annualPension, setAnnualPension] = useState(12000000);
-  const [retirementPayLumpSum, setRetirementPayLumpSum] = useState(30000000);
+  const [retirementPayLumpSum, setRetirementPayLumpSum] = useState(70000000);
   const [childIndepAge, setChildIndepAge] = useState(60);
   const [childSpendingReduction, setChildSpendingReduction] = useState(12000000);
   const [recessionCycle, setRecessionCycle] = useState(10);
@@ -249,8 +249,8 @@ export function SimulatorForm() {
 
         <Section label="연금">
           <InputRow label="퇴직금 수령액" value={retirementPayLumpSum} onChange={setRetirementPayLumpSum} isCurrency hint="은퇴 시 일시금 (퇴직연금 IRP 등)" />
-          <InputRow label="연금 수령 나이" value={pensionStartAge} onChange={setPensionStartAge} suffix="세" placeholder="0 = 해당없음" hint="국민연금 + 퇴직연금 수령 시작" />
-          <InputRow label="연금 연 수령액" value={annualPension} onChange={setAnnualPension} isCurrency hint="국민연금 + 퇴직연금 합산 연 수령액" />
+          <InputRow label="연금 수령 나이" value={pensionStartAge} onChange={setPensionStartAge} suffix="세" placeholder="0 = 해당없음" hint="국민연금 수령 시작 나이" />
+          <InputRow label="연금 연 수령액" value={annualPension} onChange={setAnnualPension} isCurrency hint="국민연금 연 수령액 (퇴직금 별도)" />
         </Section>
 
         <div className="rule-fade" />
