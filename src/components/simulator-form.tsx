@@ -34,19 +34,19 @@ const formatMan = (n: number) => {
 
 export function SimulatorForm() {
   const [currentAge, setCurrentAge] = useState(35);
-  const [netWorth, setNetWorth] = useState(300000000);
-  const [returnRate, setReturnRate] = useState(7);
-  const [annualSpending, setAnnualSpending] = useState(60000000);
+  const [netWorth, setNetWorth] = useState(100000000);
+  const [returnRate, setReturnRate] = useState(5);
+  const [annualSpending, setAnnualSpending] = useState(36000000);
   const [inflationRate, setInflationRate] = useState(3);
-  const [annualIncome, setAnnualIncome] = useState(80000000);
-  const [incomeGrowthRate, setIncomeGrowthRate] = useState(5);
+  const [annualIncome, setAnnualIncome] = useState(40000000);
+  const [incomeGrowthRate, setIncomeGrowthRate] = useState(3);
   const [retirementAge, setRetirementAge] = useState(55);
   const [liquidationCost, setLiquidationCost] = useState(15);
   const [pensionStartAge, setPensionStartAge] = useState(65);
-  const [annualPension, setAnnualPension] = useState(18000000);
-  const [retirementPayLumpSum, setRetirementPayLumpSum] = useState(60000000);
-  const [childIndepAge, setChildIndepAge] = useState(65);
-  const [childSpendingReduction, setChildSpendingReduction] = useState(24000000);
+  const [annualPension, setAnnualPension] = useState(12000000);
+  const [retirementPayLumpSum, setRetirementPayLumpSum] = useState(30000000);
+  const [childIndepAge, setChildIndepAge] = useState(60);
+  const [childSpendingReduction, setChildSpendingReduction] = useState(12000000);
   const [recessionCycle, setRecessionCycle] = useState(8);
   const [recessionDropRate, setRecessionDropRate] = useState(35);
   const [doomsdayAge, setDoomsdayAge] = useState(50);
